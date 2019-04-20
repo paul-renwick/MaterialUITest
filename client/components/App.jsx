@@ -1,6 +1,4 @@
 import React from 'react'
-import Inputs from './Inputs'
-import LineChart from './LineChart'
 import { Route } from 'react-router-dom'
 
 // //css imports
@@ -35,14 +33,9 @@ const App = () => {
           justify="center"
           alignitems="center">
           <Typography component="h5" variant="h5" gutterBottom>
-        Discrete Trial Data
+            Test Layout
           </Typography>
-
         </Grid>
-        <div className="content">
-          <Route path = '/'component={LineChart} />
-          <Route path ='/' component={Inputs} />
-        </div>
       </MuiThemeProvider>
     </React.Fragment>
   )
