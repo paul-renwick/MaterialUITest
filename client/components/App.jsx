@@ -3,11 +3,9 @@ import React from 'react'
 // //css imports
 import Grid from '@material-ui/core/Grid'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import blue from '@material-ui/core/colors/blue'
-import purple from '@material-ui/core/colors/purple'
 import Typography from '@material-ui/core/Typography'
-import AppBar from './AppBar'
-
+import CssBaseline from '@material-ui/core/CssBaseline';
+import AddTarget from './AddTarget'
 
 const theme = createMuiTheme({
   palette: {
@@ -33,10 +31,10 @@ const App = () => {
   return (
     <React.Fragment>
       <MuiThemeProvider theme={theme}>
-      <AppBar />
+      <CssBaseline />
       <Grid container spacing={24}>
         <Grid item xs={12}>
-          12 Grid
+          <AddTarget />
         </Grid>
         <Grid item xs={6}>
         6 Grid
